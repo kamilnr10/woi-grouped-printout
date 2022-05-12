@@ -11,8 +11,8 @@
                  
                  function addQuoteToItem(itemsArray) {
                      let arrayOfWords = [];
-                     for (var i = 0; i < itemsArray.length; i++) {
-                         var txt = "'";
+                     for (let i = 0; i < itemsArray.length; i++) {
+                        let txt = "'";
                          txt += itemsArray[i] + "'";
                          arrayOfWords.push(txt);
                      }
@@ -25,7 +25,7 @@
                  }
          
                  function uniqueArray(ar) {
-                     var j = {};
+                    let j = {};
                    
                      ar.forEach( function(v) {
                          j[v+ '::' + typeof v] = v;
@@ -320,12 +320,12 @@
                          }
                          header += '</b></td></tr>' +
                          '<tr><td>' + PDF.woNr + ' </td><td align="right"><b><p>';
-                         for (var i = 0; i < uniqArr.length; i++) {
+                         for (let i = 0; i < uniqArr.length; i++) {
                              header += uniqArr[i] +'; '
                          };
                          header += '</p></b></td></tr>' +
                          '<tr><td>' + PDF.soNr + ' </td><td align="right" ><b>';
-                         for (var i = 0; i < createdFromUniqArr.length; i++) {
+                         for (let i = 0; i < createdFromUniqArr.length; i++) {
                              header += createdFromUniqArr[i] + '; '
                          };
                          header += '</b></td></tr>' +
